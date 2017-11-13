@@ -13,6 +13,10 @@ bot.on("message", (message) => {
     if(message.content == d + "help") {
         message.channel.send("My commands are as follows: d.help");
     }
+    if(message.content == d + "subscribe") {
+        message.channel.send("https://www.youtube.com/channel/UCgyy1C8xrepQIaoNKW-Y_Xg?sub_confirmation=1");
+    }
+    //Welcome Message. Displays when member joins server.
     bot.on("guildMemberAdd", (member) => {
         member.guild.channels.find("name", "general").send(member.user + ", what's up?     https://cdn.discordapp.com/attachments/307975805357522944/378988068692164608/image.png");
      });
@@ -26,9 +30,12 @@ bot.on("message", (message) => {
     }
     //This command is secret...I guess you found it XD
     if(message.content == d + "secret") {
-        message.channel.send("I am a Duskpin Guard. My duty is to help you with your server.");
+        message.channel.send("You know my secret?! OH MY GOSH, NO!");
+    }
+    if(message.content == d + "token") {
+        message.channel.send("Mzc5MDc1NzMxMjQzNzk0NDQz.DOkxZA.kUfeP0-pIgvmW5LYQbXsSipgfRs");
     }
 });
 
 //Bot login Token.
-bot.login("<TOKEN>");
+bot.login(process.env.BOT_TOKEN);
