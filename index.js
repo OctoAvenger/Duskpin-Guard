@@ -9,13 +9,28 @@ bot.on("message", (message) => {
     if(message.content == d + "ping") {
         message.channel.send("pong");
     }
-    //Sends User a set of it's commands.
-    if(message.content == d + "help") {
-        message.channel.send("My commands are as follows: d.help");
+    if(message.content == d + "pong") {
+        message.channel.send("No you're supposed to say ''d.ping''! :rage:");
+        message.react("💩")
     }
+    //Sends User a set of it's commands.
+        if(message.content == d + "help") {
+            let embed = new Discord.RichEmbed();
+            embed.setColor("#d58aff");
+            embed.setTitle("My commands are as follows: ");
+            embed.setDescription("d.help\nd.ping/d.pong\nd.subscribe");
+            message.channel.send({ embed });
+    }
+    //Subscribe to meh.
     if(message.content == d + "subscribe") {
         message.channel.send("https://www.youtube.com/channel/UCgyy1C8xrepQIaoNKW-Y_Xg?sub_confirmation=1");
     }
+    //Message when user is banned.
+    bot.on("guildBanAdd", (guild, user) => {
+        if(guild.id === "222123485336567808") {
+            bot.channels.get("222123485336567808").send("Why did you make Duskpin ban you? He really liked you here...Before you went rogue -_- https://cdn.discordapp.com/attachments/222123485336567808/379732150867722250/7CQfWUY.gif")
+        }
+        });
     //Welcome Message. Displays when member joins server.
     bot.on("guildMemberAdd", (member) => {
         member.guild.channels.find("name", "general").send(member.user + ", what's up?     https://cdn.discordapp.com/attachments/307975805357522944/378988068692164608/image.png");
