@@ -18,7 +18,7 @@ bot.on("message", (message) => {
             let embed = new Discord.RichEmbed();
             embed.setColor("#d58aff");
             embed.setTitle("My commands are as follows:\n\n");
-            embed.setDescription("**General commands:**\nd.help\nd.ping\nd.pong\n\n**Functionality commands:**\n*It's so lonely here. LOL*\n\n**Extra Commands:**\nd.subscribe");
+            embed.setDescription("**General commands:**\nd.help *Gives you a list of all the commands I am capable of.*\nd.ping *Returns ''pong'' This will test my running speed.*\nd.pong *To test my running speed.*\n\n**Functionality commands:**\n*It's so lonely here.* LOL\n\n**Extra Commands:**\nd.subscribe *Type to find out what this one does.*\nd.code *Allows you to see how I'm coded.*\nd.token *Gives you my token you can hack me this way. ;)*\nd.secret *This one is a secret.*");
             message.channel.send({ embed });
     }
     //Subscribe to meh.
@@ -43,14 +43,22 @@ bot.on("message", (message) => {
         //Figuring out how to make this less spammy...
         //message.channel.send("https://giphy.com/gifs/mrw-top-escalator-Nx0rz3jtxtEre");
     }
-    //This command is secret...I guess you found it XD
+    //Extra Commands
+    if(message.content == d + "token") {
+        message.channel.send("Mzc5MDc1NzMxMjQzNzk0NDQz.DOkxZA.kUfeP0-pIgvmW5LYQbXsSipgfRs");
+    }
+    if(message.content == d + "code") {
+        message.channel.send("View the code for me right here: https://github.com/OctoAvenger/Duskpin-Guard");
+    }
+    //Secret Commands. I guess you know them know :think:
     if(message.content == d + "secret") {
         message.channel.send("You know my secret?! OH MY GOSH, NO!");
     }
-    if(message.content == d + "token") {
-        message.channel.send("Mzc5MDc1NzMxMjQzNzk0NDQz.DOkxZA.kUfeP0-pIgvmW5LYQbXsSipgfRs");
+    if(message.content == "Duskpin Guard, you are a genius!") {
+        message.channel.send("I know I am. :smirk:");
+        message.react("👍")
     }
 });
 
 //Bot login Token.
-bot.login("<TOKEN");
+bot.login("<TOKEN>");
