@@ -14,7 +14,7 @@ bot.on("message", (message) => {
         message.react("💩")
     }
     //Sends User a set of it's commands.
-        if(message.content == d + "help") {
+        if(message.content == d + "help" || "Can'st thou please extrapolate on thy commands, my friend, Duskpin?") {
             let embed = new Discord.RichEmbed();
             embed.setColor("#d58aff");
             embed.setTitle("My commands are as follows: ");
@@ -53,4 +53,4 @@ bot.on("message", (message) => {
 });
 
 //Bot login Token.
-bot.login(process.env.BOT_TOKEN);
+bot.login("<TOKEN");
