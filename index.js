@@ -17,8 +17,8 @@ bot.on("message", (message) => {
         if(message.content == d + "help") {
             let embed = new Discord.RichEmbed();
             embed.setColor("#d58aff");
-            embed.setTitle("My commands are as follows: ");
-            embed.setDescription("d.help\nd.ping/d.pong\nd.subscribe");
+            embed.setTitle("My commands are as follows:\n\n");
+            embed.setDescription("**General commands:**\nd.help\nd.ping\nd.pong\n\n**Functionality commands:**\n*It's so lonely here. LOL*\n\n**Extra Commands:**\nd.subscribe");
             message.channel.send({ embed });
     }
     //Subscribe to meh.
@@ -53,4 +53,4 @@ bot.on("message", (message) => {
 });
 
 //Bot login Token.
-bot.login("<TOKEN>");
+bot.login("<TOKEN");
