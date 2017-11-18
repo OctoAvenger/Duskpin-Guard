@@ -1,4 +1,4 @@
-/**This is the code for Duskpin Guard. Add him here: https://discordapp.com/oauth2/authorize?client_id=233047635441876993&scope=bot&permissions=2146958591**/
+/**This is the code for Duskpin Guard. Add it here: https://discordapp.com/oauth2/authorize?client_id=233047635441876993&scope=bot&permissions=2146958591**/
 //Defines Bot
 const Discord = require("discord.js");
 const bot = new Discord.Client();
