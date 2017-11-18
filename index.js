@@ -1,4 +1,3 @@
-/**This is the code for Duskpin Guard. Add it here: https://discordapp.com/oauth2/authorize?client_id=233047635441876993&scope=bot&permissions=2146958591**/
 //Defines Bot
 const Discord = require("discord.js");
 const bot = new Discord.Client();
@@ -42,7 +41,8 @@ bot.on("message", (message) => {
     //Fun Commands
     //Displays your avatar.
     if (message.content == d + "avatar") {
-      message.reply(message.author.avatarURL);
+        //made size = 0 because why not?
+        message.reply(message.author.avatarURL + "?size=0");
     }
     //Tells everyone what your doing.
     /*if(message.includes(d + "inform")) {
