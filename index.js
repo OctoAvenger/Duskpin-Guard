@@ -11,7 +11,7 @@ bot.on("guildMemberAdd", (member) => {
 //Message when user is banned.
 bot.on("guildBanAdd", (guild, user) => {
     if(guild.id === "222123485336567808") {
-        bot.channels.get("222123485336567808").send("Why did you make Duskpin ban you? He really liked you here...Before you went rogue -_- https://cdn.discordapp.com/attachments/222123485336567808/379732150867722250/7CQfWUY.gif")
+        bot.channels.get("222123485336567808").send(member.user + "Why did you make Duskpin ban you? He really liked you here...Before you went rogue -_- https://cdn.discordapp.com/attachments/222123485336567808/379732150867722250/7CQfWUY.gif")
     }
 });
 
