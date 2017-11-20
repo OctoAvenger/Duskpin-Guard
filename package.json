@@ -9,6 +9,8 @@
   "author": {
     "name": "Nathan McLaughlin"
   },
+  "node": {
+    "version": "9.0.0"
   "license": "ISC",
   "dependencies": {
     "discord.js": "^11.2.1",
