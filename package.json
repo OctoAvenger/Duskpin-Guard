@@ -6,16 +6,12 @@
   "scripts": {
     "start": "node bot.js"
   },
-  "dependencies": {
-    "discord.js": "11.1.0",
-    "request": "2.81.0"
-  },
   "author": {
     "name": "Nathan McLaughlin"
   },
   "license": "ISC",
   "dependencies": {
     "discord.js": "^11.2.1",
-    "discord.js-commando": "^0.9.0"
+    "discord.js-commando": "0.9.0"
   }
 }
