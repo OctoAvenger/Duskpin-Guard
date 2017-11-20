@@ -1,2 +1,2 @@
 # Duskpin-Guard
-Repository for Duskpin Guard
+Repository for Duskpin Guard.
