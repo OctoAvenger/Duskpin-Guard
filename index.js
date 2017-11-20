@@ -10,7 +10,7 @@ bot.on("guildMemberAdd", (member) => {
 
  //Message when user leaves ;(
 bot.on("guildMemberRemove", (member) => {
-    member.guild.channels.find("name", "general").send(member.user + " left...Why'd you leave?! :sob:");
+    member.guild.channels.find("name", "general").send(member.user + " Why'd you leave?! :sob:");
  });
 
 //Message when user is banned.
