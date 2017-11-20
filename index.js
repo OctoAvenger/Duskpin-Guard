@@ -80,4 +80,4 @@ bot.on("message", (message) => {
 });
 
 //Bot login Token.
-bot.login("MjMzMDQ3NjM1NDQxODc2OTkz.DOuZCA.7UH77IfXVpFKS1IkFrTJ1nzBUi4");
+bot.login("<TOKEN>");
