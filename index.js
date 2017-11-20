@@ -8,6 +8,11 @@ bot.on("guildMemberAdd", (member) => {
     member.guild.channels.find("name", "general").send(member.user + ", what's up?     https://cdn.discordapp.com/attachments/379786857522921484/380851195515764736/image.png");
  });
 
+ //Message when user leaves ;(
+bot.on("guildMemberRemove", (member) => {
+    member.guild.channels.find("name", "general").send(member.user + " left...Why'd you leave?! :sob:");
+ });
+
 //Message when user is banned.
 bot.on("guildBanAdd", (guild, user) => {
     if(guild.id === "222123485336567808") {
