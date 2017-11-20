@@ -71,7 +71,7 @@ bot.on("message", (message) => {
     }
     //Secret Commands. I guess you know them know :think:
     if(message.content == d + "secret") {
-        message.channel.send("When I was five...I took a shard of Duskpine from the Duskpin Market...I returned it...But still... 😶");
+        message.channel.send("When I was five...I took a shard of Duskpine from the Duskpin Market...I returned it...But still... 🤐");
     }
     if(message.content == "Duskpin Guard, you are a genius!") {
         message.channel.send("I know I am. :smirk:");
