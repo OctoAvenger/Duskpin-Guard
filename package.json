@@ -4,7 +4,7 @@
   "description": "This is all the files for Duskpin Guard.",
   "main": "index.js",
   "scripts": {
-    "start": "node bot.js"
+    "start": "node index.js"
   },
   "author": {
     "name": "Nathan McLaughlin"
