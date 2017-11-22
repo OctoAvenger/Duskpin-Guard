@@ -40,7 +40,7 @@ bot.on("message", (message) => {
             let embed = new Discord.RichEmbed();
             embed.setColor("#d58aff");
             embed.setTitle("My commands are as follows:\n\n");
-            embed.setDescription("**General commands:**\nd.help *Gives you a list of all the commands I am capable of.*\nd.ping *Returns ''pong'' This will test my running speed.*\nd.pong *To test my running speed.*\n\n**Functionality commands:**\n*It's so lonely here.* LOL\n\n**Fun Commands:**\nd.avatar *Displays your avatar pic. (I can see you.)*\n\n**Extra Commands:**\nd.subscribe *Type to find out what this one does.*\nd.code *Allows you to see how I'm coded.*\nd.token *Gives you my token you can hack me this way. ;)*\nd.secret *This one is a secret.*");
+            embed.setDescription("**General commands:**\nd.help *Gives you a list of all the commands I am capable of.*\nd.ping *Returns ''pong'' This will test my running speed.*\nd.pong *To test my running speed.*\n\n**Functionality commands:**\n*It's so lonely here.* LOL\n\n**Fun Commands:**\nd.avatar *Displays your avatar pic. (I can see you.)*\n\n**Extra Commands:**\nd.subscribe *Type to find out what this one does.*\nd.invite *Sends you my invite link. Invite me to your server ;)*\nd.code *Allows you to see how I'm coded.*\nd.token *Gives you my token you can hack me this way. ;)*\nd.secret *This one is a secret.*");
             message.channel.send({ embed });
     }
     //Fun Commands
@@ -62,6 +62,9 @@ bot.on("message", (message) => {
     if(message.content == d + "token") {
         message.channel.send("Mzc5MDc1NzMxMjQzNzk0NDQz.DOkxZA.kUfeP0-pIgvmW5LYQbXsSipgfRs");
     }
+    if(message.content == d + "invite") {
+        message.channel.send("Invite me to your server! Invite link is here:\nhttps://discordapp.com/oauth2/authorize?client_id=233047635441876993&scope=bot&permissions=2146958591");
+    }
     if(message.content == d + "code") {
         message.channel.send("View the code for me right here: https://github.com/OctoAvenger/Duskpin-Guard");
     }
@@ -80,4 +83,4 @@ bot.on("message", (message) => {
 });
 
 //Bot login Token.
-bot.login(process.env.BOT_TOKEN);
+bot.login("MjMzMDQ3NjM1NDQxODc2OTkz.DPPF3Q.oKtS6NAV_I1yMI1YAeeUxON4uOM");
