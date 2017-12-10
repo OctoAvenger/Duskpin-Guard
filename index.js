@@ -78,4 +78,4 @@ bot.on("message", (message) => {
 });
 
 //Bot login Token.
-bot.login("<TOKEN>");
+bot.login(process.env.BOT_TOKEN);
