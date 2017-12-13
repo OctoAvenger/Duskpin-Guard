@@ -1,27 +1,27 @@
 //Defines Bot
-const Discord = require("discord.js");
-const bot = new Discord.Client();
-const d = "d.";
+const Discord = require('discord.js');
+const client = new Discord.Client();
+const prefix = "d.";
 
  //Message when user leaves ;(
-bot.on("guildMemberRemove", (member) => {
+client.on("guildMemberRemove", (member) => {
     member.guild.channels.find("name", "general").send(member.user + " Why'd you leave?! :sob:");
  });
 
 //Message when user is banned.
-bot.on("guildBanAdd", (guild, user) => {
+client.on("guildBanAdd", (guild, user) => {
     if(guild.id === "222123485336567808") {
-        bot.channels.get("222123485336567808").send(member.user + "Why did you make Duskpin ban you? He really liked you here...Before you went rogue -_- https://cdn.discordapp.com/attachments/222123485336567808/379732150867722250/7CQfWUY.gif")
+        client.channels.get("222123485336567808").send(member.user + "Why did you make Duskpin ban you? He really liked you here...Before you went rogue -_- https://cdn.discordapp.com/attachments/222123485336567808/379732150867722250/7CQfWUY.gif")
     }
 });
 
 //Welcome Message. Displays when member joins server.
-bot.on("guildMemberAdd", (member) => {
+client.on("guildMemberAdd", (member) => {
     member.guild.channels.find("name", "general").send(member.user + ", what's up?     https://cdn.discordapp.com/attachments/307975805357522944/378988068692164608/image.png");
 });
 
 //These are all the messages it will send via command.
-bot.on("message", (message) => {
+client.on("message", (message) => {
     //To test how fast the bot is.
     if(message.content == d + "ping") {
         message.channel.send("pong");
@@ -78,4 +78,4 @@ bot.on("message", (message) => {
 });
 
 //Bot login Token.
-bot.login(process.env.BOT_TOKEN);
+client.login(process.env.BOT_TOKEN);
