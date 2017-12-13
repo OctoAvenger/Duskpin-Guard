@@ -1,16 +1,14 @@
+
 {
-  "name": "Duskpin Guard",
-  "version": "1.0.0",
-  "description": "This is all the files for Duskpin Guard.",
-  "main": "index.js",
+  "name": "Test",
+  "description": "Test",
+  "version": "0.0.0",
+  "main": "bot.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node bot.js"
   },
-  "author": {
-    "name": "Nathan McLaughlin"
-  },
-  "license": "ISC",
   "dependencies": {
-    "discord.js": "11.2.1"
+    "discord.js": "11.1.0",
+    "request": "2.81.0"
   }
 }
