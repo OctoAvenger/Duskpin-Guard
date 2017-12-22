@@ -73,7 +73,11 @@ client.on("message", (message) => {
     }
     if(message.content == "Duskpin Guard, you are a genius!") {
         message.channel.send("I know I am. :smirk:");
-        message.react("👍")
+        message.react("👍");
+    }
+    if(message.content == "test") {
+        message.react("<:pranked:393571047896645642>")
+        message.react("👍");
     }
 });
 
